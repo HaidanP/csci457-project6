@@ -1,3 +1,4 @@
+<%#Haidan Parajuli csci 457 %>
 <div id="<%= dom_id movie %>">
   <p>
     <strong>Title:</strong>
@@ -12,6 +13,12 @@
   <p>
     <strong>Description:</strong>
     <%= movie.description %>
+  </p>
+
+  <%#lives in the shared partial so the index and details page both show it %>
+  <p>
+    <strong>Director:</strong>
+    <%= movie.director %>
   </p>
 
   <p>

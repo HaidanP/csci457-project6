@@ -1,3 +1,4 @@
+<%#Haidan Parajuli csci 457 %>
 <%= form_with(model: movie) do |form| %>
   <% if movie.errors.any? %>
     <div style="color: red">
@@ -24,6 +25,12 @@
   <div>
     <%= form.label :description, style: "display: block" %>
     <%= form.text_field :description %>
+  </div>
+
+  <%#label text comes out as "Director" which is what the cucumber step fills in %>
+  <div>
+    <%= form.label :director, style: "display: block" %>
+    <%= form.text_field :director %>
   </div>
 
   <div>

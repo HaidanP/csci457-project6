@@ -1,3 +1,5 @@
+#Haidan Parajuli csci 457
+
 # TL;DR: YOU SHOULD DELETE THIS FILE
 #
 # This file is used by web_steps.rb, which you should also delete
@@ -15,6 +17,16 @@ module NavigationHelpers
 
     when /^the (RottenPotatoes )?home\s?page$/ then '/movies'
     when /^the movies page$/ then '/movies'
+
+    #find_by! blows up loudly if a title in the feature has a typo instead of handing back a nil id
+    when /^the edit page for "(.*)"$/
+      edit_movie_path(Movie.find_by!(title: ::Regexp.last_match(1)))
+
+    when /^the details page for "(.*)"$/
+      movie_path(Movie.find_by!(title: ::Regexp.last_match(1)))
+
+    when /^the Similar Movies page for "(.*)"$/
+      similar_movie_path(Movie.find_by!(title: ::Regexp.last_match(1)))
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

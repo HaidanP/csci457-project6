@@ -1,5 +1,7 @@
+#Haidan Parajuli csci 457
+
 class MoviesController < ApplicationController
-  before_action :set_movie, only: %i[ show edit update destroy ]
+  before_action :set_movie, only: %i[ show edit update destroy similar ]
 
   # GET /movies or /movies.json
   def index
@@ -40,6 +42,16 @@ class MoviesController < ApplicationController
 
   # GET /movies/1 or /movies/1.json
   def show
+  end
+
+  #GET /movies/1/similar
+  #bounces back to the list with a notice if there's nothing to match on
+  def similar
+    if @movie.director_missing?
+      redirect_to movies_path, notice: "'#{@movie.title}' has no director info"
+    else
+      @movies = @movie.others_by_same_director
+    end
   end
 
   # GET /movies/new
@@ -97,6 +109,6 @@ class MoviesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def movie_params
-      params.require(:movie).permit(:title, :rating, :description, :release_date)
+      params.require(:movie).permit(:title, :rating, :description, :director, :release_date)
     end
 end
