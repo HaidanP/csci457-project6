@@ -1,3 +1,5 @@
+#Haidan Parajuli csci 457
+
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2025_07_02_121840) do
+ActiveRecord::Schema[8.1].define(version: 2026_11_20_034809) do
   create_table "movies", force: :cascade do |t|
     t.string "title"
     t.string "rating"
@@ -18,5 +20,6 @@ ActiveRecord::Schema[8.1].define(version: 2025_07_02_121840) do
     t.datetime "release_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "director"
   end
 end
