@@ -1,0 +1,15 @@
+<%#Haidan Parajuli csci 457 %>
+<h1>Similar Movies</h1>
+
+<p>Other movies directed by <%= @movie.director %></p>
+
+<%#own id so the title checks can be scoped to just the results %>
+<ul id="similar_movies">
+  <% @movies.each do |movie| %>
+    <li><%= link_to movie.title, movie %></li>
+  <% end %>
+</ul>
+
+<div>
+  <%= link_to "Back to movies", movies_path %>
+</div>

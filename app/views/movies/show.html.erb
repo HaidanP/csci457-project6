@@ -1,10 +1,13 @@
+<%#Haidan Parajuli csci 457 %>
 <p style="color: green"><%= notice %></p>
 
 <%= render @movie %>
 
 <div>
   <%= link_to "Edit this movie", edit_movie_path(@movie) %> |
-  <%= link_to "Back to movies", movies_path %>
+  <%= link_to "Back to movies", movies_path %> |
+  <%#always shown, the controller decides what to do when there's no director %>
+  <%= link_to "Find Movies With Same Director", similar_movie_path(@movie) %>
 
   <%= button_to "Destroy this movie", @movie, method: :delete %>
 </div>
