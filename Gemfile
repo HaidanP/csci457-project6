@@ -1,3 +1,5 @@
+#Haidan Parajuli csci 457
+
 source "https://rubygems.org"
 
 ruby "4.0.6"
@@ -32,6 +34,7 @@ group :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner-active_record'
   gem 'rspec-expectations'
+  gem "simplecov", require: false
 end
 
 # Render uses PostgreSQL; local development and tests use SQLite.
