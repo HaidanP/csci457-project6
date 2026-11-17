@@ -1,0 +1,145 @@
+{
+  "simplecov_history": {
+    "format_version": 1,
+    "entries": [
+      {
+        "created_at": "2026-11-20T03:49:08Z",
+        "branch": "main",
+        "commit": "88bb2390615bb27f715f3e91799cea7f83e782d1",
+        "totals": {
+          "line": 68.49
+        },
+        "groups": {
+          "Channels": {
+            "line": 0.0
+          },
+          "Controllers": {
+            "line": 70.58
+          },
+          "Helpers": {
+            "line": 100.0
+          },
+          "Jobs": {
+            "line": 0.0
+          },
+          "Mailers": {
+            "line": 0.0
+          },
+          "Models": {
+            "line": 100.0
+          }
+        },
+        "files": {
+          "app/channels/application_cable/channel.rb": {
+            "line": 0.0
+          },
+          "app/channels/application_cable/connection.rb": {
+            "line": 0.0
+          },
+          "app/controllers/application_controller.rb": {
+            "line": 100.0
+          },
+          "app/controllers/movies_controller.rb": {
+            "line": 70.0
+          },
+          "app/helpers/application_helper.rb": {
+            "line": 100.0
+          },
+          "app/helpers/movies_helper.rb": {
+            "line": 100.0
+          },
+          "app/jobs/application_job.rb": {
+            "line": 0.0
+          },
+          "app/mailers/application_mailer.rb": {
+            "line": 0.0
+          },
+          "app/models/application_record.rb": {
+            "line": 100.0
+          },
+          "app/models/movie.rb": {
+            "line": 100.0
+          }
+        }
+      },
+      {
+        "created_at": "2026-11-20T03:49:52Z",
+        "branch": "main",
+        "commit": "88bb2390615bb27f715f3e91799cea7f83e782d1",
+        "totals": {
+          "line": 76.92
+        },
+        "groups": {
+          "Controllers": {
+            "line": 70.58
+          },
+          "Helpers": {
+            "line": 100.0
+          },
+          "Models": {
+            "line": 100.0
+          }
+        },
+        "files": {
+          "app/controllers/application_controller.rb": {
+            "line": 100.0
+          },
+          "app/controllers/movies_controller.rb": {
+            "line": 70.0
+          },
+          "app/helpers/application_helper.rb": {
+            "line": 100.0
+          },
+          "app/helpers/movies_helper.rb": {
+            "line": 100.0
+          },
+          "app/models/application_record.rb": {
+            "line": 100.0
+          },
+          "app/models/movie.rb": {
+            "line": 100.0
+          }
+        }
+      },
+      {
+        "created_at": "2026-11-20T03:50:14Z",
+        "branch": "main",
+        "commit": "f24fa14be2556658e279b5467c121fde92749f3c",
+        "totals": {
+          "line": 93.84
+        },
+        "groups": {
+          "Controllers": {
+            "line": 92.15
+          },
+          "Helpers": {
+            "line": 100.0
+          },
+          "Models": {
+            "line": 100.0
+          }
+        },
+        "files": {
+          "app/controllers/application_controller.rb": {
+            "line": 100.0
+          },
+          "app/controllers/movies_controller.rb": {
+            "line": 92.0
+          },
+          "app/helpers/application_helper.rb": {
+            "line": 100.0
+          },
+          "app/helpers/movies_helper.rb": {
+            "line": 100.0
+          },
+          "app/models/application_record.rb": {
+            "line": 100.0
+          },
+          "app/models/movie.rb": {
+            "line": 100.0
+          }
+        }
+      }
+    ]
+  }
+}
